@@ -32,7 +32,7 @@ jobs:
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/live_server:latest
 
-   build-and-deploy:
+  build-and-deploy:
      steps:
        - name: Deploy to VPS
          with:

@@ -45,5 +45,5 @@ jobs:
            script: |
              echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
              docker pull nailyusupchik/live_server:latest
-             docker run -d --name my-spring-app -p 8080:8080 live_server:latest nailyusupchik/live_server:latest
+             docker run -d --name my-spring-app -p 8080:8080 nailyusupchik/live_server:latest
 
